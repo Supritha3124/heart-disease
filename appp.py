@@ -22,7 +22,7 @@ model=pickle.load(open("model.pkl",'rb'))
 #Note that render_template means it looks for the file in the templates folder. 
 
 #use the route() decorator to tell Flask what URL should trigger our function.
-@appp.route('/')
+@appp.route('/hello')
 def home():
     return render_template('index.html')
 
